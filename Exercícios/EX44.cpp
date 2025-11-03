@@ -15,17 +15,14 @@ void leitura(int vet[], int n){
 }
 
 bool busca(int val, int vet[], int n){
-    if(n == 1 && vet[0] == val){
-        return true;
-    }                                   // Caso base
-    if(n == 1 && vet[0] != val){
+    if(n == 0){
         return false;
     }
 
     if(vet[n-1] == val){            // Passo recursivo
         return true;
     }else{
-        busca(val,vet,n-1);
+        return busca(val,vet,n-1);
     }
 }
 
