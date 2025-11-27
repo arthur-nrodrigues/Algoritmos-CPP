@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-//Implementando o BoobleSort.
+//Implementando o bubbleSort.
 
 void preencheVet(int vet[],int n){
     for(int i=0;i<n;i++){
@@ -21,7 +21,7 @@ void troca(int *a,int *b){
     *b = aux;
 }
 
-void BoobleSort(int vet[],int n){
+void bubbleSort(int vet[],int n){
     int cont = 0;
     for(int i=0;i<n-1;i++){
         for(int j=0;j<n-1-i;j++){
@@ -42,7 +42,7 @@ int main(){
     int n; cin >> n;
     int *vet = new int[n];
     preencheVet(vet,n);
-    BoobleSort(vet,n);
+    bubbleSort(vet,n);
     imprimeVet(vet,n);
 
 
