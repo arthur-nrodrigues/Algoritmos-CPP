@@ -1,0 +1,69 @@
+# depslib dependency file v1.0
+1713537976 source:c:\users\atrod\onedrive\desktop\tvc1_projeto\listadupla.cpp
+	<iostream>
+	<cstdlib>
+	"ListaDupla.h"
+
+1713496934 c:\users\atrod\onedrive\desktop\tvc1_projeto\listadupla.h
+	"NoDuplo.h"
+
+1559260937 c:\users\atrod\onedrive\desktop\tvc1_projeto\noduplo.h
+
+1776008616 source:c:\users\atrod\onedrive\desktop\tvc1_projeto\listaencad.cpp
+	<iostream>
+	<cstdlib>
+	"ListaEncad.h"
+
+1713495535 c:\users\atrod\onedrive\desktop\tvc1_projeto\listaencad.h
+	"No.h"
+
+1559261250 c:\users\atrod\onedrive\desktop\tvc1_projeto\no.h
+
+1713537611 source:c:\users\atrod\onedrive\desktop\tvc1_projeto\main.cpp
+	<iostream>
+	<cstdlib>
+	"ListaCont.h"
+	"ListaEncad.h"
+	"ListaDupla.h"
+
+1713494124 c:\users\atrod\onedrive\desktop\tvc1_projeto\listacont.h
+
+1776005430 source:c:\users\atrod\onedrive\desktop\tvc1_projeto\listacont.cpp
+	<iostream>
+	<cstdlib>
+	"ListaCont.h"
+
+1776005430 source:c:\users\atrod\onedrive\desktop\provas anteriores\tvc1_projeto\listacont.cpp
+	<iostream>
+	<cstdlib>
+	"ListaCont.h"
+
+1713494124 c:\users\atrod\onedrive\desktop\provas anteriores\tvc1_projeto\listacont.h
+
+1713537976 source:c:\users\atrod\onedrive\desktop\provas anteriores\tvc1_projeto\listadupla.cpp
+	<iostream>
+	<cstdlib>
+	"ListaDupla.h"
+
+1713496934 c:\users\atrod\onedrive\desktop\provas anteriores\tvc1_projeto\listadupla.h
+	"NoDuplo.h"
+
+1559260937 c:\users\atrod\onedrive\desktop\provas anteriores\tvc1_projeto\noduplo.h
+
+1776009253 source:c:\users\atrod\onedrive\desktop\provas anteriores\tvc1_projeto\listaencad.cpp
+	<iostream>
+	<cstdlib>
+	"ListaEncad.h"
+
+1713495535 c:\users\atrod\onedrive\desktop\provas anteriores\tvc1_projeto\listaencad.h
+	"No.h"
+
+1559261250 c:\users\atrod\onedrive\desktop\provas anteriores\tvc1_projeto\no.h
+
+1713537611 source:c:\users\atrod\onedrive\desktop\provas anteriores\tvc1_projeto\main.cpp
+	<iostream>
+	<cstdlib>
+	"ListaCont.h"
+	"ListaEncad.h"
+	"ListaDupla.h"
+
