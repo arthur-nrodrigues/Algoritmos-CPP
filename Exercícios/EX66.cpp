@@ -1,4 +1,4 @@
-int ListaEncad :: contaMaiores (int val ){
+int ListaEncad::contaMaiores (int val ){
     No *p = new No();
     int cont = 0;
 
