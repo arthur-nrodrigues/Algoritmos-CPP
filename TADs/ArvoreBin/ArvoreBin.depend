@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1779540886 source:c:\users\atrod\onedrive\documentos\github\algoritmos-cpp\tads\arvorebin\main.cpp
+	<iostream>
+	"ArvoreBin.h"
+
+1779541151 c:\users\atrod\onedrive\documentos\github\algoritmos-cpp\tads\arvorebin\arvorebin.h
+	"NoArv.h"
+
+1779367310 c:\users\atrod\onedrive\documentos\github\algoritmos-cpp\tads\arvorebin\noarv.h
+
+1779541283 source:c:\users\atrod\onedrive\documentos\github\algoritmos-cpp\tads\arvorebin\arvorebin.cpp
+	<iostream>
+	"ArvoreBin.h"
+

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1779475455 source:c:\users\atrod\onedrive\documentos\github\algoritmos-cpp\tads\arvbinbusca\arvbinbusca.cpp
+	<iostream>
+	<cmath>
+	"ArvBinBusca.h"
+
+1779474980 c:\users\atrod\onedrive\documentos\github\algoritmos-cpp\tads\arvbinbusca\arvbinbusca.h
+	"NoArv.h"
+
+1778089428 c:\users\atrod\onedrive\documentos\github\algoritmos-cpp\tads\arvbinbusca\noarv.h
+
+1779474947 source:c:\users\atrod\onedrive\documentos\github\algoritmos-cpp\tads\arvbinbusca\main.cpp
+	<iostream>
+	"ArvBinBusca.h"
+
