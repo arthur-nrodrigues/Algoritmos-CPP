@@ -9,9 +9,10 @@ class ArvBin
         void libera(NoArv *p);
         void auxImprime(NoArv *p);
         int auxImpares(NoArv *p);
-        int auxSoma(NoArv *p);
-        void auxMedia(NoArv *p, int *nos, int *soma);
-        float auxMedia2(NoArv *p);
+        int auxSomaNos(NoArv *p);
+        int auxContaNos(NoArv *p);
+        int auxMaior(NoArv *p);
+        int auxMaiores(NoArv *p, int val);
     public:
         ArvBin();
         ~ArvBin();
@@ -19,8 +20,10 @@ class ArvBin
         void imprime();
         int impares();
         int soma();
+        int contaNos();
         float media();
-        float media2();
+        int maior();
+        int maiores(int val);
 };
 
 

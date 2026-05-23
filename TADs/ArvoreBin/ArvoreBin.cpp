@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 #include "ArvoreBin.h"
 
 ArvBin::ArvBin()
@@ -71,57 +70,86 @@ int ArvBin:: auxImpares(NoArv *p)
 
 int ArvBin::soma()
 {
-    return auxSoma(raiz);
+    return auxSomaNos(raiz);
 }
 
-int ArvBin::auxSoma(NoArv *p)
+int ArvBin::auxSomaNos(NoArv *p)
 {
     if(p != NULL)
     {
-        int soma = 0;
-        soma += p->getInfo();
-        soma += auxSoma(p->getEsq());
-        soma += auxSoma(p->getDir());
-
-        return soma;
+        return p->getInfo() + auxSomaNos(p->getEsq()) + auxSomaNos(p->getDir());
     }
     return 0;
 }
 
 float ArvBin::media()
 {
-    int nos = 0; int soma = 0;
-    auxMedia(raiz, &nos, &soma);
-    return 1.0 * (soma/nos);
-}
-
-void ArvBin::auxMedia(NoArv *p, int *nos, int *soma)
-{
-    if(p != NULL)
+    if(raiz != NULL)
     {
-        *soma += p->getInfo(); // Contou a raiz.
-        *nos += 1; //Contou a raiz.
-        auxMedia(p->getEsq(),nos,soma);
-        auxMedia(p->getDir(),nos,soma);
+        int somaTotal = soma();
+        int nosTotal =  contaNos();
+
+        return (float)somaTotal/nosTotal;
     }
+    return 0;
 }
 
-float ArvBin::media2()
+int ArvBin::contaNos()
 {
-    return auxMedia2(raiz);
+    return auxContaNos(raiz);
 }
 
-float ArvBin::auxMedia2(NoArv *p)
+int ArvBin::auxContaNos(NoArv *p)
 {
     if(p != NULL)
     {
+        return 1 + auxContaNos(p->getEsq()) + auxContaNos(p->getDir());
+    }
+    return 0;
+}
+
+int ArvBin::maior()
+{
+    return auxMaior(raiz);
+}
+
+int ArvBin::auxMaior(NoArv *p)
+{
+    if(p != NULL)
+    {
+        int maiorEsq = auxMaior(p->getEsq());
+        int maiorDir = auxMaior(p->getDir());
+
+        int maior = p->getInfo();
+        if(maiorEsq > maior)
+            maior = maiorEsq;
+        else if(maiorDir > maior)
+            maior = maiorDir;
+
+        return maior;
+    }
+    return 0;
+}
+
+
+int ArvBin::maiores(int val)
+{
+    return auxMaiores(raiz, val);
+}
+
+int ArvBin::auxMaiores(NoArv *p, int val)
+{
+    if(p != NULL)
+    {
+        int maioresEsq = auxMaiores(p->getEsq(),val);
+        int maioresDir = auxMaiores(p->getDir(),val);
+
+        int ehmaior = p->getInfo();
         int cont = 0;
-        int soma = 0;
-        cont = 1 + auxMedia2(p->getEsq()) + auxMedia2(p->getDir());
-        soma += p->getInfo();
-        soma += auxMedia2(p->getEsq());
-        soma += auxMedia2(p->getDir());
-        return 1.0 * (soma/cont);
+        if(ehmaior > val)
+            cont++;
+
+        return cont + maioresEsq + maioresDir;
     }
     return 0;
 }

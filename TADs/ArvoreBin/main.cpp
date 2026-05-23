@@ -21,7 +21,8 @@ int main()
     cout << "Num de impares = " << arv.impares() << endl;
     cout << "Soma dos nos = " << arv.soma() << endl;
     cout << "Media = " << arv.media() << endl;
-    cout << "Media = " << arv.media2() << endl;
+    cout << "Maior = " << arv.maior() << endl;
+    cout << "Maiores que 3 = " << arv.maiores(3) << endl;
 
     return 0;
 }
